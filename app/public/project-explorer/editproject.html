@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Explorer</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">Project Explorer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerIndex" aria-controls="navbarTogglerIndex" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                   
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="searchForm">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">    
+                        <li class="nav-item">
+                            <a class="nav-link" href="createproject.html">Submit</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarTogglerIndex">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Sign Up</a>
+                            </li>
+                        </ul>
+                </div>  
+            </nav>
+        </header>
+       
+        <main>
+            <div class="container p-5">
+                <h3>Project 1</h3>
+
+                <div class="container">
+                    <div class="row row-cols-4 py-3 bg-light">
+                      <div class="col">Created By<br>Ade Chris</div>
+                      <div class="col">Date Created <br> 2020/08/30</div>
+                      <div class="col">Last Updated <br>2020/08/30</div>
+                      <div class="col d-flex justify-content-end"><button type="button" class="btn btn-primary">View Project</button></div>
+                    </div>
+                </div>
+
+                <div class="container py-5">
+                    <div class="row row-cols-2">
+                      <div class="col font-weight-bold">Edit Project <hr></div>
+                      <div class="col font-weight-bold">Manage Project files <hr></div>
+                      <div class="col"> 
+                        <form>
+                            <div class="form-group">
+                            <label for="createProjectInput">Project name</label>
+                            <input type="email" class="form-control" id="createProjectInput" placeholder="Project 1">
+                            </div>
+                        
+                            <div class="form-group">
+                            <label for="createProjecttextaarea">Project abstract</label>
+                            <textarea class="form-control" id="createProjecttextaarea" rows="4" placeholder="Project 1 is a very interesting project"></textarea>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="createProjectAuthorInput">Author(s)</label>
+                                <input type="email" class="form-control" id="createProjectAuthorInput" placeholder="Ade Chris">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="createProjectTagInput">Tag(s)</label>
+                                <input type="email" class="form-control" id="createProjectTagInput" placeholder="#web">
+                            </div>
+                        </form>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                      <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="form-control custom-file-label" for="customFile">Click to open file browser</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <div class="card">
+                                    <div class="card-header font-weight-bold">
+                                     Project files
+                                    </div>
+                                    <div class="card-body">
+                                      <p class="card-text text-center text-muted">No file uploaded yet</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </main>
+
+        <div class="container">    
+            <footer class="footer text-right py-3 bg-light">
+                <div class="container">
+                    <span class="text-muted">Project Explorer © 2020 .</span> Edconnect
+                </div>
+            </footer>
+        </div>    
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Explorer</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">Project Explorer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerIndex" aria-controls="navbarTogglerIndex" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                   
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="searchForm">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">    
+                        <li class="nav-item">
+                            <a class="nav-link" href="createproject.html">Submit</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarTogglerIndex">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Sign Up</a>
+                            </li>
+                        </ul>
+                </div>  
+            </nav>
+        </header>
+        <main>
+            <div class="container w-50 p-5 mx-auto">    
+                <h1>Login</h1>
+            
+                <form>
+                    <div class="form-group">
+                    <label for="loginInputEmail">Email address</label>
+                    <input type="email" class="form-control" id="loginInputEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                    <label for="loginInputPassword">Password</label>
+                    <input type="password" class="form-control" id="loginInputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </main>
+        <div class="container">    
+            <footer class="footer text-right py-3 bg-light">
+                <div class="container">
+                    <span class="text-muted">Project Explorer © 2020 .</span> Edconnect
+                </div>
+            </footer>
+        </div>    
+    </body>
+</html>

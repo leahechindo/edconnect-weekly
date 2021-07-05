@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Explorer</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">Project Explorer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerIndex" aria-controls="navbarTogglerIndex" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                   
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="searchForm">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">    
+                        <li class="nav-item">
+                            <a class="nav-link" href="createproject.html">Submit</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarTogglerIndex">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Sign Up</a>
+                            </li>
+                        </ul>
+                </div>  
+            </nav>
+        </header>
+    
+        <main>
+            <div class="container w-50 mx-auto py-5">
+                <h2>Submit Project</h2>
+                <form>
+                    <div class="form-group">
+                      <label for="createProjectInput">Project name</label>
+                      <input type="email" class="form-control" id="createProjectInput" placeholder="Enter project name">
+                    </div>
+                   
+                    <div class="form-group">
+                      <label for="createProjecttextaarea">Project abstract</label>
+                      <textarea class="form-control" id="createProjecttextaarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="createProjectAuthorInput">Author(s)</label>
+                        <input type="email" class="form-control" id="createProjectAuthorInput" placeholder="Enter author names (seperated by comma)">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="createProjectTagInput">Tag(s)</label>
+                        <input type="email" class="form-control" id="createProjectTagInput" placeholder="Use # to tag project by different topics (e.g. #javascript #monogodb)">
+                      </div>
+                  </form>
+                  <button type="button" class="btn btn-primary">Continue</button>
+            </div>
+
+        </main>
+        <div class="container">    
+            <footer class="footer text-right py-3 bg-light">
+                <div class="container">
+                    <span class="text-muted">Project Explorer © 2020 .</span> Edconnect
+                </div>
+            </footer>
+        </div>    
+       
+    </body>
+</html>
