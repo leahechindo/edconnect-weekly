@@ -41,22 +41,22 @@
                 <form>
                     <div class="form-group">
                       <label for="createProjectInput">Project name</label>
-                      <input type="email" class="form-control" id="createProjectInput" placeholder="Enter project name">
+                      <input name="projectName" type="text" class="form-control" id="createProjectInput" placeholder="Enter project name">
                     </div>
                    
                     <div class="form-group">
                       <label for="createProjecttextaarea">Project abstract</label>
-                      <textarea class="form-control" id="createProjecttextaarea" rows="4"></textarea>
+                      <textarea name="projectAbstract" class="form-control" id="createProjecttextaarea" rows="4"></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="createProjectAuthorInput">Author(s)</label>
-                        <input type="email" class="form-control" id="createProjectAuthorInput" placeholder="Enter author names (seperated by comma)">
+                        <input name="author" type="text" class="form-control" id="createProjectAuthorInput" placeholder="Enter author names (seperated by comma)">
                       </div>
 
                       <div class="form-group">
                         <label for="createProjectTagInput">Tag(s)</label>
-                        <input type="email" class="form-control" id="createProjectTagInput" placeholder="Use # to tag project by different topics (e.g. #javascript #monogodb)">
+                        <input name="tag" type="text" class="form-control" id="createProjectTagInput" placeholder="Use # to tag project by different topics (e.g. #javascript #monogodb)">
                       </div>
                   </form>
                   <button type="button" class="btn btn-primary">Continue</button>
