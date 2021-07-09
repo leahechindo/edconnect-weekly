@@ -38,30 +38,32 @@
         <main>
             <div class="container p-3">
                 <h3>Project Gallery</h3>
-    
-                <div class="form-group form-row bg-light p-3 mx-auto">
-                    <form>
-                        <div class="col-8">
-                            <input type="text" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
-                        </div>
-                        <div class="col">
-                            <label class="sr-only" for="rowFormSearchForm">Search by</label>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text">Search by</div>
-                              </div>
-                              <select name="searchType" id="rowFormSearchForm" class="form-control form-control-lg">
-                                <option selected>Name</option>
-                                <option>Abstract</option>
-                                <option>Authors</option>
-                                <option>Tags</option>
-                              </select>
+                <div class="bg-light p-3">
+                    <form name="searchTerm">
+                        <div class="form-row mx-auto">
+                            <div class="form-group col-md-7">
+                                <input name="searchTerm" type="text" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
                             </div>
-                          </div>
-                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                            <div class="form-group col">
+                                <label class="sr-only" for="rowFormSearchForm">Search by</label>
+                                <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Search by</div>
+                                </div>
+                                <select name="searchType" id="rowFormSearchForm" class="form-control form-control-lg">
+                                    <option selected>Name</option>
+                                    <option>Abstract</option>
+                                    <option>Authors</option>
+                                    <option>Tags</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
-                
                 <div class="container py-3">
                     <h4>
                         All Projects <small class="text-muted">(0 results)</small>
